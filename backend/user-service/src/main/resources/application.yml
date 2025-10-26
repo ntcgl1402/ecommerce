@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: user-service
+  datasource:
+    url:  jdbc:postgresql://localhost:5432/ecommerce_user_db
+    username: postgres
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  app:
+    jwtSecret: c3b50e728d65d71ebab5bb189793281c8f54ee8facd5a2e38f80fa9af6c481b7
+    jwtExpirationMs: 3000000
